@@ -13,7 +13,7 @@
 
 # ℹ️ Description
 
-A React site that utilizes NodeJS/Express, REST api's, Sql, and SequelizeJS to create a social media application that lets to post and comment and like! 
+A React site that utilizes NodeJS/Express, REST api's, Sql, and SequelizeJS to create a social media application that lets to post, comment, and like!
 
 # 📸 Component Diagram
 
