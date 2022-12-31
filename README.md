@@ -1,4 +1,4 @@
-# <div align="center">Pokedex Sightings</div>
+# <div align="center">PostaGram</div>
 
 <p align="center">
     <br>
@@ -8,16 +8,14 @@
 </p>
 
 <p align="center">
-  <small>Last Updated: February 23th, 2021</small>
+  <small>Last Updated: Decemeber, 30, 2022</small>
 </p>
 
 # ℹ️ Description
 
-A React site will allow users to explore the Pokedex's list of pokemon. As well as reference and add sighting locations and details about the sighting.
+A React site that utilizes NodeJS/Express, REST api's, Sql, and SequelizeJS to create a social media application that lets to post and comment and like! 
 
 # 📸 Component Diagram
-
-![Component Diagram](./README_Assets/PokeSightings.png)
 
 # 🧑‍💻 Contributers
 
@@ -31,9 +29,8 @@ A React site will allow users to explore the Pokedex's list of pokemon. As well 
 -   <a href="https://github.com/">Git/GitHub</a>
 -   <a href="https://reactjs.org/">ReactJS</a>
 -   <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS">CSS</a>
--   <a href="https://getbootstrap.com/">Bootstrap</a>
--   <a href="https://redux.js.org/">Redux</a>
--   <a href="https://firebase.google.com/">Firebase</a>
+-   <a href="https://www.mysql.com/">MySQL</a>
+-   <a href="https://sequelize.org/">SequelizeJS</a>
 -   <a href="https://www.javascript.com/">JavaScriptES6</a>
 -   <a href="https://reactjs.org/docs/introducing-jsx.html">JSX</a>
 -   <a href="https://facebook.github.io/create-react-app/docs/getting-started">Create-React-App</a>
@@ -45,19 +42,6 @@ A React site will allow users to explore the Pokedex's list of pokemon. As well 
 # 💾 Installation Requirements
 
 ## For Both Mac & Windows systems
-
-#### To Clone:
-
--   Open your preferred command line program.
--   Navigate to the location or directory you'd like the project directory to be created in. (e.g., "cd Desktop" if you'd like to clone the project to your desktop)
--   Enter the command "$ git clone https://github.com/Pugsly99/Gen-1-Pokedex-Sightings" in your command line.
-
-#### To Download:
-
--   Navigate to the [project repository](https://github.com/Pugsly99/Gen-1-Pokedex-Sightings) in your browser.
--   Click the green "Code" button toward the top right of the page.
--   Click "Download ZIP" and extract the files.
--   Open the newly-downloaded project in your preferred code editor.
 
 # 🖥️ Opening the Project on your Local System
 
