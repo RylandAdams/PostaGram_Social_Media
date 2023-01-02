@@ -12,7 +12,7 @@ function App() {
 				<div className='navbar'>
 					<Link to='/'> Home Page </Link>
 					<Link to='/createpost'> Create A Post </Link>
-					<Link to='/post/:id'> Post </Link>
+					<Link to='/post/:id'></Link>
 				</div>
 				<Routes>
 					<Route
