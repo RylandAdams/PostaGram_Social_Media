@@ -72,7 +72,7 @@ body {
 	color: white;
 }
 
-/* CREATE POST PAGE CSS */
+/* CREATE POST PAGE */
 
 .createPostPage {
 	font-family: Arial, Helvetica, sans-serif;
@@ -119,4 +119,40 @@ body {
 
 span {
 	color: red;
+}
+
+/* INDIVIDUAL POST */
+.postPage {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 100%;
+}
+
+.leftSide {
+	flex: 50%;
+	height: calc(100vh - 70px);
+	display: grid;
+	place-items: center;
+}
+
+.rightSide {
+	flex: 50%;
+	height: calc(100vh - 70px);
+	display: grid;
+	place-items: center;
+}
+
+#individual {
+	height: 500px;
+	width: 600px;
+}
+
+#individual .title,
+#individual .footer {
+	font-size: 30px;
+}
+
+#individual .body {
+	font-size: 25px;
 }

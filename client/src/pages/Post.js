@@ -15,11 +15,16 @@ function Post() {
 	return (
 		<div className='postPage'>
 			<div className='leftSide'>
-				<div className='title'> {postObject.title}</div>
-				<div className='postText'> {postObject.postText}</div>
-				<div className='footer'> {postObject.username}</div>
+				<div
+					className='post'
+					id='individual'
+				>
+					<div className='title'> {postObject.title}</div>
+					<div className='body'> {postObject.postText}</div>
+					<div className='footer'> {postObject.username}</div>
+				</div>
 			</div>
-			<div className='rightSide'></div>
+			<div className='rightSide'>Comments</div>
 		</div>
 	);
 }
