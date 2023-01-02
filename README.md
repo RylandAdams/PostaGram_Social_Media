@@ -35,6 +35,8 @@ A React site that utilizes NodeJS/Express, REST api's, Sql, and SequelizeJS to c
 -   <a href="https://reactjs.org/docs/introducing-jsx.html">JSX</a>
 -   <a href="https://facebook.github.io/create-react-app/docs/getting-started">Create-React-App</a>
 -   <a href="https://nodejs.org/en/">Node.js</a>
+-   <a href="https://www.npmjs.com/package/yup">Yup</a>
+-   <a href="https://formik.org/">Formik</a>
 -   <a href="https://webpack.js.org/">Webpack</a>
 -   <a href="https://babeljs.io/">Babel</a>
 -   <a href="https://eslint.org/">Eslint</a>
