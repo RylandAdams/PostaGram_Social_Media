@@ -12,7 +12,7 @@ function App() {
 				<div className='navbar'>
 					<Link to='/'> Home Page </Link>
 					<Link to='/createpost'> Create A Post </Link>
-					<Link to='/post/:id'> Create A Post </Link>
+					<Link to='/post/:id'> Post </Link>
 				</div>
 				<Routes>
 					<Route
@@ -24,6 +24,11 @@ function App() {
 						path='/createpost'
 						exact
 						element={<CreatePost />}
+					/>
+					<Route
+						path='/post/:id'
+						exact
+						element={<Post />}
 					/>
 				</Routes>
 			</Router>
