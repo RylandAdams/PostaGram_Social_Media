@@ -24,14 +24,15 @@ router.post('/login', async (req, res) => {
 	if (!user) res.json({ error: "User Doesn't Exist" });
 
 	bcrypt.compare(password, user.password).then(async (match) => {
-		if (!match)
+		if (!match) {
 			res.json({ error: 'Wrong Username And Password Combination' });
-
-		const accessToken = sign(
-			{ username: user.username, id: user.id },
-			'importantsecret'
-		);
-		res.json(accessToken);
+		} else {
+			const accessToken = sign(
+				{ username: user.username, id: user.id },
+				'importantsecret'
+			);
+			res.json(accessToken);
+		}
 	});
 });
 
