@@ -18,28 +18,35 @@ function Login() {
 				if (response.data.error) {
 					alert(response.data.error);
 				} else {
-					localStorage.setItem('accessToken', response.data);
-					setAuthState(true);
+					localStorage.setItem('accessToken', response.data.token);
+					setAuthState({
+						username: response.data.username,
+						id: response.data.id,
+						status: true,
+					});
 					navigate('/');
 				}
 			});
 	};
 
 	return (
-		<div>
+		<div className='loginContainer'>
+			<label>Username:</label>
 			<input
 				type='text'
 				onChange={(event) => {
 					setUsername(event.target.value);
 				}}
 			/>
+			<label>Password:</label>
 			<input
 				type='password'
 				onChange={(event) => {
 					setPassword(event.target.value);
 				}}
 			/>
-			<button onClick={login}> LOGIN </button>
+
+			<button onClick={login}> Login </button>
 		</div>
 	);
 }
