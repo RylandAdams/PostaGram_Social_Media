@@ -1,12 +1,20 @@
-import React from 'react';
+import React, { useContext, useEffect } from 'react';
 
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import { AuthContext } from '../helpers/AuthContext';
 
 function CreatePost() {
 	let navigate = useNavigate();
+	const { authState } = useContext(AuthContext);
+
+	useEffect(() => {
+		if (!authState.status) {
+			navigate('/login');
+		}
+	}, []);
 
 	const initialValues = {
 		title: '',
