@@ -25,6 +25,19 @@ function Home() {
 			)
 			.then((response) => {
 				alert(response.data);
+
+				setListOfPosts(
+					listOfPosts.map((post) => {
+						if (post.id === postId) {
+							if (response.data.liked)
+								return { ...post, Likes: [...post.Likes, 0] };
+						} else {
+							const likesArray = post.Likes;
+							likesArray.pop();
+							return { ...post, Likes: likesArray };
+						}
+					})
+				);
 			});
 	};
 
