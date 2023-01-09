@@ -13,7 +13,7 @@ function Home() {
 	let navigate = useNavigate();
 
 	useEffect(() => {
-		if (!authState.status) {
+		if (!localStorage.getItem('accessToken')) {
 			console.log(authState.status);
 			navigate('./login');
 		} else {
