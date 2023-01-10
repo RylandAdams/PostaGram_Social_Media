@@ -8,6 +8,8 @@ import Registration from './pages/Registration';
 import Login from './pages/Login';
 import Profile from './pages/Profile';
 import PageNotFound from './pages/PageNotFound';
+import ChangePassword from './pages/ChangePassword';
+
 import { AuthContext } from './helpers/AuthContext';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
@@ -92,6 +94,11 @@ function App() {
 							path='/profile/:id'
 							exact
 							element={<Profile />}
+						/>
+						<Route
+							path='/changepassword'
+							exact
+							element={<ChangePassword />}
 						/>
 						<Route
 							path='*'
