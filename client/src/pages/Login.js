@@ -13,7 +13,10 @@ function Login() {
 	const login = () => {
 		const data = { username: username, password: password };
 		axios
-			.post('http://localhost:3001/auth/login', data)
+			.post(
+				'https://full-stack-api-postagram.herokuapp.com/auth/login',
+				data
+			)
 			.then((response) => {
 				if (response.data.error) {
 					alert(response.data.error);

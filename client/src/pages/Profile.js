@@ -14,13 +14,17 @@ function Profile() {
 
 	useEffect(() => {
 		axios
-			.get(`http://localhost:3001/auth/basicinfo/${id}`)
+			.get(
+				`https://full-stack-api-postagram.herokuapp.com/auth/basicinfo/${id}`
+			)
 			.then((response) => {
 				setUsername(response.data.username);
 			});
 
 		axios
-			.get(`http://localhost:3001/posts/byUserId/${id}`)
+			.get(
+				`https://full-stack-api-postagram.herokuapp.com/posts/byUserId/${id}`
+			)
 			.then((response) => {
 				setListOfPosts(response.data);
 			});

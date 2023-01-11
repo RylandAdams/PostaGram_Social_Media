@@ -19,10 +19,12 @@ function Registration() {
 	});
 
 	const onSubmit = (data) => {
-		axios.post('http://localhost:3001/auth', data).then((response) => {
-			console.log(data);
-			navigate('/');
-		});
+		axios
+			.post('https://full-stack-api-postagram.herokuapp.com/auth', data)
+			.then((response) => {
+				console.log(data);
+				navigate('/');
+			});
 	};
 
 	return (

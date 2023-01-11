@@ -18,7 +18,7 @@ function Home() {
 			navigate('./login');
 		} else {
 			axios
-				.get('http://localhost:3001/posts', {
+				.get('https://full-stack-api-postagram.herokuapp.com/posts', {
 					headers: {
 						accessToken: localStorage.getItem('accessToken'),
 					},
@@ -37,7 +37,7 @@ function Home() {
 	const likeAPost = (postId) => {
 		axios
 			.post(
-				'http://localhost:3001/like',
+				'https://full-stack-api-postagram.herokuapp.com/like',
 				{ PostId: postId },
 				{
 					headers: {

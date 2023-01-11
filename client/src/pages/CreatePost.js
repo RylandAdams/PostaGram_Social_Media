@@ -28,9 +28,15 @@ function CreatePost() {
 
 	const onSubmit = (data) => {
 		axios
-			.post('http://localhost:3001/posts', data, {
-				headers: { accessToken: localStorage.getItem('accessToken') },
-			})
+			.post(
+				'https://full-stack-api-postagram.herokuapp.com/posts',
+				data,
+				{
+					headers: {
+						accessToken: localStorage.getItem('accessToken'),
+					},
+				}
+			)
 			.then((response) => {
 				navigate('/');
 			});
