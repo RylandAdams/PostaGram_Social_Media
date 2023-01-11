@@ -54,10 +54,6 @@ body {
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
 }
-.post .footer button {
-	z-index: 100;
-	background-color: red;
-}
 
 .footer .username {
 	flex: 50%;
@@ -98,7 +94,7 @@ body {
 	width: 500px;
 	height: auto;
 	padding: 20px;
-	border: 5px solid rgb(232, 132, 3);
+	background-color: rgb(232, 132, 3);
 	border-radius: 5px;
 }
 
@@ -116,7 +112,7 @@ body {
 	margin-top: 15px;
 	height: 40px;
 	border: none;
-	background-color: rgb(208, 169, 117);
+	background-color: rgb(218, 168, 102);
 	border-radius: 5px;
 	color: white;
 }
@@ -154,7 +150,7 @@ span {
 	justify-content: flex-end;
 	align-items: center;
 }
-.navbar a {
+a {
 	margin-left: 20px;
 	text-decoration: none;
 	color: white;
@@ -221,7 +217,7 @@ button {
 }
 
 .addCommentContainer input {
-	border: 2px solid rgb(232, 132, 3);
+	background-color: rgb(232, 132, 3);
 }
 
 .rightSide .listOfComments {
@@ -281,5 +277,5 @@ button {
 }
 
 .loginContainer input {
-	border: 2px solid rgb(232, 132, 3);
+	background-color: rgb(232, 132, 3);
 }

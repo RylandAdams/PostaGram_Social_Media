@@ -46,8 +46,6 @@ function Home() {
 				}
 			)
 			.then((response) => {
-				alert(response.data);
-
 				setListOfPosts(
 					listOfPosts.map((post) => {
 						if (post.id === postId) {
